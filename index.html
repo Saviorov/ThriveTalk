@@ -7,12 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>ThriveTalk</title>
 </head>
 
 <body class="notranslate">
-    <navbar class="navbar">
+    <div class="navbar">
         <div class="navbar__logo">
             ThriveTalk
         </div>
@@ -25,7 +26,7 @@
         <div class="navbar__button">
             <button class="navbar__btn">Contact Us</button>
         </div>
-    </navbar>
+    </div>
 
     <div class="background-image"></div>
 
@@ -207,7 +208,8 @@
                 <div class="footer__column-block">
                     <div class="footer__column">
                         <div class="footer__title">SOME INFO</div>
-                        <div class="footer__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo Sligula.</div>
+                        <div class="footer__text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+                            commodo Sligula.</div>
                     </div>
                     <div class="footer__column">
                         <div class="footer__title">ENFOLD HEALTH</div>
@@ -219,7 +221,7 @@
                         </div>
                     </div>
                     <div class="footer__column">
-                        <div class="footer__title">OFFICE HOURS</div>
+                        <div class="footer__title"> OFFICE HOURS</div>
                         <div class="footer__time"> Mo-Fr: 8:00-19:00 </div>
                         <div class="footer__time"> Sa: 8:00-14:00</div>
                         <div class="footer__time"> Su: closed</div>
@@ -231,6 +233,17 @@
             Copyright - Saviorov 2022
         </div>
     </main>
+
+    <!-- Scroll to Up - arrow
+    <a class="top-link" href="#home">
+       <h1>ввер</h1>
+    </a> -->
+
+    <div onclick="scrollToTop()" class="scrollTop">
+        <i class="fa-solid fa-arrow-up-long"></i>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>

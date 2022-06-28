@@ -3,10 +3,14 @@ html {
 }
 
 body {
+  color: #373737;
+  background-color: white;
   font-size: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #22356F;
+  color: #22356f;
+  -webkit-transition: all 0.3 linear;
+  transition: all 0.3 linear;
 }
 
 a {
@@ -17,12 +21,13 @@ a {
 .navbar__logo {
   font-weight: 700;
   cursor: pointer;
-  color: #62D0DF;
+  color: #62d0df;
   font-size: 30px;
   font-weight: bold;
 }
 
 .navbar {
+  z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,7 +40,7 @@ a {
   padding-top: 27px;
   padding-right: 10%;
   padding-left: 10%;
-  padding-bottom: 160px;
+  margin-bottom: 100px;
   max-height: 50px;
 }
 
@@ -46,7 +51,7 @@ a {
   display: flex;
   gap: 20px;
   list-style-type: none;
-  color: #22356F;
+  color: #22356f;
 }
 
 .navbar__item {
@@ -55,19 +60,19 @@ a {
 
 .navbar__item:hover {
   font-weight: 700;
-  border-bottom: 2px solid #F4F9E2;
+  border-bottom: 2px solid #f4f9e2;
   padding-bottom: 10px;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
-  -webkit-box-shadow: inset 0px -1px 0px #22356F;
-          box-shadow: inset 0px -1px 0px #22356F;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  -webkit-box-shadow: inset 0px -1px 0px #22356f;
+          box-shadow: inset 0px -1px 0px #22356f;
 }
 
 .navbar__btn {
-  z-index: 2;
-  color: #FFFFFF;
+  z-index: 102;
+  color: #ffffff;
   border: none;
-  background: #62D0DF;
+  background: #62d0df;
   padding: 20px 35px 19px 35px;
   border-radius: 50px;
   font-family: "larsseitBold";
@@ -77,7 +82,7 @@ a {
 }
 
 .navbar__btn:hover {
-  background-color: #FAB63E;
+  background-color: #fab63e;
 }
 
 .header {
@@ -114,17 +119,17 @@ a {
   height: 40rem;
   position: absolute;
   z-index: -3;
-  background: #F4F9E2;
+  background-color: var(--white);
 }
 
 .header__image {
-  background-color: #EDFDFF;
+  background-color: #edfdff;
   border-radius: 312.159px;
 }
 
 .header__title {
   letter-spacing: -0.035em;
-  color: #62D0DF;
+  color: #62d0df;
   margin-bottom: 30px;
   font-size: 24px;
 }
@@ -132,7 +137,7 @@ a {
 .header__subtitle {
   font-size: 48px;
   letter-spacing: -0.035em;
-  color: #22356F;
+  color: #22356f;
   margin-bottom: 30px;
 }
 
@@ -140,7 +145,7 @@ a {
   font-family: "larsseitRegular";
   line-height: 42px;
   font-size: 24px;
-  color: #22356F;
+  color: #22356f;
   font-weight: 400;
   margin-bottom: 30px;
 }
@@ -153,12 +158,12 @@ a {
       -ms-flex-align: center;
           align-items: center;
   letter-spacing: 0.1em;
-  color: #FAB63E;
+  color: #fab63e;
 }
 
 .btn {
   padding: 10px 30px 11px 30px;
-  color: #FAB63E;
+  color: #fab63e;
   display: inline-block;
   background: none;
   -webkit-transition: 0.3s;
@@ -169,7 +174,7 @@ a {
 
 .btn:hover,
 .btn:focus {
-  background-color: #F9B640;
+  background-color: #f9b640;
   color: #fff;
 }
 
@@ -180,11 +185,11 @@ a {
 
 .why-thrive {
   margin-top: 200px;
-  background-color: #62D0DF;
+  background-color: #62d0df;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .why-thrive-row {
@@ -241,6 +246,7 @@ a {
 }
 
 .about__container {
+  background-color: var(--white);
   padding-top: 156px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -250,7 +256,7 @@ a {
 .about__title {
   font-size: 22px;
   letter-spacing: 0.06em;
-  color: #22356F;
+  color: #22356f;
   padding-right: 25%;
   padding-left: 106px;
 }
@@ -262,7 +268,7 @@ a {
   font-size: 24px;
   line-height: 34px;
   letter-spacing: 0.005em;
-  color: #22356F;
+  color: #22356f;
   margin-bottom: 76px;
 }
 
@@ -298,7 +304,7 @@ a {
 }
 
 .card li {
-  color: #E9B730;
+  color: #e9b730;
   list-style-position: inherit;
 }
 
@@ -307,26 +313,26 @@ a {
 }
 
 .card:nth-child(1) {
-  background-color: #FFE2DE;
+  background-color: #ffe2de;
 }
 
 .card:nth-child(2) {
-  background-color: #C4E769;
+  background-color: #c4e769;
 }
 
 .card:nth-child(3) {
-  background-color: #62D0DF;
+  background-color: #62d0df;
 }
 
 .card:nth-child(4) {
-  background-color: #0052C1;
+  background-color: #0052c1;
 }
 
 .card__title {
   font-size: 32px;
   line-height: 34px;
   letter-spacing: -0.006em;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-top: 95px;
   width: 230px;
   padding-left: 60px;
@@ -380,7 +386,7 @@ a {
       -ms-grid-row-align: center;
       align-self: center;
   position: relative;
-  background-color: #22356F;
+  background-color: #22356f;
   text-align: center;
   width: 33.3%;
   min-height: 480px;
@@ -388,7 +394,7 @@ a {
 }
 
 .info__card li {
-  color: #E9B730;
+  color: #e9b730;
   list-style-position: inherit;
 }
 
@@ -397,7 +403,7 @@ a {
 }
 
 .info__card:nth-child(2) {
-  background-color: #0052C1;
+  background-color: #0052c1;
 }
 
 .info__card:nth-child(3) {
@@ -408,15 +414,15 @@ a {
 }
 
 .info__card:nth-child(4) {
-  background-color: #62D0DF;
+  background-color: #62d0df;
 }
 
 .info__card:nth-child(5) {
-  background-color: #DEE1FF;
+  background-color: #dee1ff;
 }
 
 .info__card:nth-child(6) {
-  background-color: #8F00FF;
+  background-color: #8f00ff;
 }
 
 .health__cards {
@@ -445,7 +451,7 @@ a {
   font-size: 28px;
   line-height: 33px;
   letter-spacing: -0.03em;
-  color: #22356F;
+  color: #22356f;
 }
 
 .health__subtitle {
@@ -478,7 +484,7 @@ a {
   text-transform: uppercase;
   font-size: 16px;
   letter-spacing: 0.06em;
-  color: #22356F;
+  color: #22356f;
   padding-top: 103px;
   padding-bottom: 225px;
 }
@@ -489,7 +495,7 @@ a {
   font-size: 36px;
   line-height: 53px;
   letter-spacing: -0.01em;
-  color: #22356F;
+  color: #22356f;
   padding-bottom: 100px;
 }
 
@@ -508,7 +514,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #22356F;
+  background-color: #22356f;
 }
 
 .ready__column-one {
@@ -520,7 +526,7 @@ a {
   font-size: 16px;
   letter-spacing: 0.06em;
   font-weight: 400;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-bottom: 230px;
 }
 
@@ -528,7 +534,7 @@ a {
   font-family: "larsseitBold";
   font-size: 64px;
   letter-spacing: -0.01em;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-bottom: 75px;
 }
 
@@ -537,7 +543,7 @@ a {
   line-height: 53px;
   font-size: 36px;
   letter-spacing: -0.005em;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-bottom: 72px;
 }
 
@@ -549,11 +555,11 @@ a {
 }
 
 .ready__button {
-  color: #62D0DF;
+  color: #62d0df;
 }
 
 .ready__button:hover {
-  background-color: #62D0DF;
+  background-color: #62d0df;
   color: #fff;
 }
 
@@ -599,7 +605,7 @@ a {
 .footer__title {
   font-size: 20px;
   letter-spacing: -0.006em;
-  color: #22356F;
+  color: #22356f;
   padding-top: 98px;
   padding-bottom: 40px;
   font-weight: 700;
@@ -630,7 +636,7 @@ a {
 }
 
 .footer__contact a {
-  color: #006DFF;
+  color: #006dff;
 }
 
 .footer__time {
@@ -642,14 +648,14 @@ a {
 
 .footer__footer {
   font-weight: 700;
-  background-color: #62D0DF;
+  background-color: #62d0df;
   padding-top: 32px;
   padding-left: 96px;
   padding-bottom: 26px;
   font-size: 20px;
   line-height: 11px;
   letter-spacing: -0.006em;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 1500px) {
@@ -733,13 +739,13 @@ a {
 
 @media screen and (max-width: 900px) {
   .navbar {
-    margin-top: 40px;
-    padding: 0;
-    margin-bottom: 150px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .fixed-nav {
+    padding-top: 80px;
   }
   .navbar__items {
     gap: 35px;
@@ -846,6 +852,59 @@ a {
   }
 }
 
+.label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #111;
+  border-radius: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 2;
+  background: #62d0df;
+  border: none;
+  padding: 20px 35px 19px 35px;
+  position: relative;
+  font-size: 30px;
+}
+
+.fa-sun {
+  padding-right: 30px;
+  color: yellow;
+}
+
+.fa-moon {
+  color: #4a4040;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox:checked + .label .ball {
+  -webkit-transform: translateX(59px);
+          transform: translateX(59px);
+}
+
+.ball {
+  border-radius: 50%;
+  width: 33px;
+  height: 34px;
+  background-color: #000000;
+  position: absolute;
+  -webkit-transition: -webkit-transform 0.2s linear;
+  transition: -webkit-transform 0.2s linear;
+  transition: transform 0.2s linear;
+  transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+
 @font-face {
   font-family: "larsseitRegular";
   src: url("../fonts/Larsseit.otf") format("truetype");
@@ -858,5 +917,79 @@ a {
   src: url("../fonts/Larsseit-Bold.otf") format("truetype");
   font-style: normal;
   font-weight: normal;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 20px;
+  padding-left: 0%;
+}
+
+.show-link {
+  visibility: visible;
+  display: block;
+}
+
+.scrollTop {
+  font-size: 3rem;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 15px;
+  color: black;
+  border-radius: 5px;
+  border-radius: 1px solid #fff;
+  cursor: pointer;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+  -webkit-animation: bounce 2s ease-in-out infinite;
+          animation: bounce 2s ease-in-out infinite;
+}
+
+.scrollTop:hover {
+  background-color: #f7f7f7;
+  color: #000;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 /*# sourceMappingURL=style.css.map */
